@@ -38,17 +38,17 @@ const App = () => {
   }
 
   return (
-    <div className='h-[100vh] bg-gradient-to-r from-yellow-400 to-orange-500 flex justify-center items-center'>
-      <div className='h-[53vh] w-[50vw] bg-gradient-to-r from-teal-400 to-blue-500 flex flex-col items-center gap-[10px] rounded-3xl shadow-lg'>
+    <div className='h-[100vh] flex justify-center items-center md:h-[100vh] bg-gradient-to-r from-yellow-400 to-orange-500 md:flex md:justify-center md:items-center'>
+      <div className='h-[60vh] w-[80vw] flex flex-col items-center gap-[15px] md:h-[58vh] md:w-[50vw] bg-gradient-to-r from-teal-400 to-blue-500 md:flex md:flex-col md:items-center md:gap-[10px] rounded-3xl shadow-lg'>
         <input
-          className='w-[80%] h-[40px] rounded-3xl p-[20px] text-blue-700 font-semibold text-2xl mt-[30px] border-2 border-green-400'
+          className='w-[80%] h-[35px] p-[10px] font-medium text-xl  md:w-[80%] md:h-[40px] rounded-3xl md:p-[20px] text-blue-700 md:font-semibold md:text-2xl mt-[30px] border-2 border-green-400'
           type="text"
           placeholder='Enter a location'
           value={city}
           onChange={(e) => setCity(e.target.value)}
         />
         <button
-          className='hover:bg-red-400 text-2xl border-2 border-green-500 rounded-3xl p-[6px] text-white bg-teal-500 font-semibold'
+          className='hover:bg-red-400 text-xl font-medium p-[4px] md:text-2xl border-2 border-green-500 rounded-3xl md:p-[6px] text-white bg-teal-500 md:font-semibold'
           onClick={handleClick}
         >
           Search Weather
